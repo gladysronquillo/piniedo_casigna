@@ -1,0 +1,285 @@
+
+INSERT INTO dbo.pais VALUES(1, 'Estados Unidos);
+INSERT INTO dbo.pais VALUES(2,  'Albania');
+INSERT INTO dbo.pais VALUES(3,  'Alemania');
+INSERT INTO dbo.pais VALUES(4,  'Andorra');
+INSERT INTO dbo.pais VALUES(5, 'Antillas Holandesas');
+INSERT INTO dbo.pais VALUES(6, 'Arabia Saudí');
+INSERT INTO dbo.pais VALUES(7,'Argelia');
+INSERT INTO dbo.pais VALUES(8, 'Argentina');
+INSERT INTO dbo.pais VALUES(9, 'Armenia');
+INSERT INTO dbo.pais VALUES(10, 'Aruba');
+INSERT INTO dbo.pais VALUES(11, 'Bahréin');
+INSERT INTO dbo.pais VALUES(12, 'Bangladesh');
+INSERT INTO dbo.pais VALUES(13, 'Barbados');
+INSERT INTO dbo.pais VALUES(14, 'Bielorrusia');
+INSERT INTO dbo.pais VALUES(15, 'Bélgica');
+INSERT INTO dbo.pais VALUES(16,  'Botsuana');
+INSERT INTO dbo.pais VALUES(17,  'Ecuador');
+INSERT INTO dbo.pais VALUES(18,  'Brasil');
+INSERT INTO dbo.pais VALUES(19,  'Brunéi');
+INSERT INTO dbo.pais VALUES(20,  'Camerún');
+INSERT INTO dbo.pais VALUES(21,  'Canadá');
+INSERT INTO dbo.pais VALUES(22,  'República Centroafricana');
+INSERT INTO dbo.pais VALUES(23,  'Chad');
+INSERT INTO dbo.pais VALUES(24, 'Ciudad del Vaticano');
+INSERT INTO dbo.pais VALUES(25,  'Corea del Norte');
+INSERT INTO dbo.pais VALUES(26,  'Corea del Sur');
+INSERT INTO dbo.pais VALUES(27,  'Costa de Marfil');
+INSERT INTO dbo.pais VALUES(28,  'Isla Bouvet');
+INSERT INTO dbo.pais VALUES(29,  'Egipto');
+INSERT INTO dbo.pais VALUES(30,  'El Salvador');
+INSERT INTO dbo.pais VALUES(31,  'Emiratos Árabes Unidos');
+INSERT INTO dbo.pais VALUES(32,  'Eritrea');
+INSERT INTO dbo.pais VALUES(33,  'Eslovaquia');
+INSERT INTO dbo.pais VALUES(34,  'Eslovenia');
+INSERT INTO dbo.pais VALUES(35,  'España');
+
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (1, 'new jersey', 1);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (2, 'michigan', 1);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (3, 'california', 1);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (4, 'georgia', 1);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (5, 'colorado', 1);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (6, 'Azuay', 17);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES(7, 'Bolivar', 17);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (8, 'Cañar', 17);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (9, 'Carchi', 17);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (10, 'Cotopaxi', 17);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (11, 'Chimborazo', 17);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (12, 'El Oro', 17);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (13, 'Esmeraldas', 17);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (14, 'Guayas', 17);
+
+INSERT INTO [dbo].[provincia] ([prov_id], [prov_descripcion], [pais_pais_id]) VALUES (15, 'Pichicha', 17);
+
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (1, 'norfolk', 1);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (2, 'long beach', 1);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (3, 'new orleans', 1);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (4, 'lubbock', 1);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (5, 'amarillo', 2);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (6, 'lakewood', 2);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (7, 'irving', 1);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (8, 'rockford', 1);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (9, 'eugene', 1);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (10, 'wichita', 3);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (11, 'tacoma', 3);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (12, 'fontana', 1);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (13, 'oakland', 3);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (14, 'manchester', 3);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (15, 'montgomery', 3);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (16, 'seattle', 3);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (17, 'chattanooga', 3);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (18, 'el paso', 3);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (19, 'elizabeth', 3);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (20, 'mesa', 3);
+
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (21,'Cuenca', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES VALUES (22,'Giron', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES VALUES (23,'Gualaceo', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES VALUES (24,'Nabon', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (25,'Paute', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (26,'Pucara', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (27,'San Fernando', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES(28,'Santa Isabel', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUESS (29,'Sigsig', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (30,'Oña', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES(31,'chordeleg', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (32,'El Pan', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (33,'Sevilla de Oro', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (34,'Guachapala', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (35,'Camilo Ponce Enrique', 6);
+INSERT INTO [dbo].[canton] ([cant_id],[cant_descrpcion], [provincia_prov_id]) VALUES (36, 'Quito', 15);
+
+
+
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (1, 'gettysburg', 1);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (2, 'lamon', 1);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (3, 'buena', 11);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (4, 'patton', 4);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (5, 'ontario feeder express lanes', 15);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (6, 'weed', 6);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (7, 'catherine', 17);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (8, 'george', 8);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (9, 'academy', 19);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (10, 'south shore', 10);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (11, 'lehigh', 11);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (12, 'fry', 12);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (13, '38th', 13);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (14, 'chicago skyway turnaround', 14);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (15, 'eisenhower morgan st', 15);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (16, 'reserve', 16);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (17, 'blackhawk', 17);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (18, 'eisenhower cicero av', 18);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (19, 'prescott', 19);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (20, 'loop', 20);
+
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (21, 'Bellavista', 21);
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (22, 'El Batan', 21);
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (23, 'Sucre', 21);
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (24, 'Cuenca', 21);
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (25, 'Baños', 21);
+INSERT INTO [dbo].[parroquia] ([parr_id], [parr_descripcion], [canton_cant_id]) VALUES (26, 'Quito', 36);
+
+INSERT INTO [dbo].[tipo_cliente] (ticl_id], [ticl_descripcion]) VALUES (1, 'Wholesale (ventas al por mayor');
+INSERT INTO [dbo].[tipo_cliente] (ticl_id], [ticl_descripcion]) VALUES (2, 'Retail (ventas al por menor)');
+INSERT INTO [dbo].[tipo_cliente] (ticl_id], [ticl_descripcion]) VALUES (3, 'Retail');
+INSERT INTO [dbo].[tipo_cliente] (ticl_id], [ticl_descripcion]) VALUES (4, 'Wholesale');
+
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (1, 'Prestige Wines', 'Av. 12 de octubre, Quito','C478W', 26,1,'3053');
+
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (2, 'Acme Wine Imports', 'High St, Fullham, London','C567R', 1,2,'SW6');
+
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (3, 'Oz Wines', 'Av. Patria, UIO.','C121R', 26,3,'3121');
+
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (4, 'The Wine Club', 'Po Box 184 Av. Gaspar
+villarroel, Quito','C478W ', 26,4,'3051');
+
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (5, 'London Wines', 'The Strand, London','C128R', 1,3,'EC4');
+
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (6, 'International Wines', 'PO Box 324, Paris ','C342W', 20,4,'75008');
+
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (7, 'kane david', 'Quito','C542', 26,4,'750');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (8, 'dayana reeves', 'San jacinto','125C', 26,3,'884');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (9, 'joselyn hale', 'Vicentina','C54S', 26,4,'8522');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (10, 'jaylynn dennis', 'Quito','DS541', 26,1,'5522');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (11, 'patricia walton', 'Villaflora','DV54', 26,2,'8552');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (12, 'brenton skinner', 'San Jacinto','SD87', 26,1,'456');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (13, 'amber mathis', 'Batan','ERT47', 26,3,'5487');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (14, 'lamar herman', 'Puente 8','HG54', 1,3,'7878');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (15, 'howard rasmussen', 'Vicentina','YUJ45', 26,2,'78785');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (16, 'nathaly jackson', 'Chillogallorun','HG24', 2,2,'545');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (17, 'emanuel cooke', 'Florida','GHJ4', 3,2,'635');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (18, 'alaina ayala', 'Baños','BN77', 25,3,'353');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (19, 'declan beard', 'Paris','DFD54', 20,1,'757');
+INSERT INTO [dbo].[cliente] ([clie_id], [clie_nombre], [clie_direccion], [clie_codigo], [parroquia_parr_id],[tipo_cliente_ticl_id],[clie_codigoPostal]) VALUES (20, 'janessa clay', 'Quito','JH54', 26,2,'587');
+
+
+
+
+
+
+
+
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (1, 5,'S140 15/Feb/2014','');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (2, 4,'S135 12/Feb/2014','The Wine Club, Av. América E11-257,Quito');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (3, 4,' S168 16/Feb/2014','The Wine Club, Fleet Street, London');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (4, 14,'A45 15/Mar/2012','plaza');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (5, 15,'TRF 15/FEB/2009','Quito');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (6, 13,'DF5 10/MAR/2000','London');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (7, 13,'DE5 7/DIC/2000','Puente 3');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (8, 18,'GH 5/JUN/2000','Tienda Ab');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (9, 19,'IURT 5/MAY/1998','San Juan');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (10, 11,'LJH 5/AGO/2004','Vacaortiz');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (11, 11,'LK 9/NOV/2009','');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (12, 12,'DF5 12/DIC/1998','via quito');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (13, 13,'HFH 20/FEB/1987','casa 1020');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (14, 14,'IKS 25/ABR/2009','hotel 55');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (15, 15,'MS4 26/OCT/2005','iglesia 12');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (16, 16,'JSA 21/SEP/2001','casino 21');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (17, 17,'KL2 1/ENE/2003','casino 22');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (18, 18,'KG1 12/JUL/2009','juegos 2');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (19, 19,'KSH 5/DIC/2002','covento 2');
+INSERT INTO [dbo].[orden_compra] ([orde_id], [clinte_clie_id],[orde_compra],[orde_direccion_entrega]) VALUES (20, 20,'HR 23/DIC/2007','plaza 25');
+
+
+INSERT INTO [dbo].[tipo] ([tipo_id], [tipo_descripcion],[tipo_codigo]) VALUES (1, 'Mornington Pinot Noir','P12766');
+INSERT INTO [dbo].[tipo] ([tipo_id], [tipo_descripcion],[tipo_codigo]) VALUES (2, 'Mornington Pinot Grigio','P14823');
+INSERT INTO [dbo].[tipo] ([tipo_id], [tipo_descripcion],[tipo_codigo]) VALUES (3, 'Downunder Pinot Noir','P12767');
+
+INSERT INTO [dbo].[producto_stock] ([prst_id], [prodst_preciouni], [tipo_tipo_id], [prst_anio]) VALUES (1, 180, 1,2013);
+INSERT INTO [dbo].[producto_stock] ([prst_id], [prodst_preciouni], [tipo_tipo_id], [prst_anio]) VALUES (2, 150, 1,2012);
+INSERT INTO [dbo].[producto_stock] ([prst_id], [prodst_preciouni], [tipo_tipo_id], [prst_anio]) VALUES (3, 140, 2,2013);
+INSERT INTO [dbo].[producto_stock] ([prst_id], [prodst_preciouni], [tipo_tipo_id], [prst_anio]) VALUES (4, 120, 2,2012);
+INSERT INTO [dbo].[producto_stock] ([prst_id], [prodst_preciouni], [tipo_tipo_id], [prst_anio]) VALUES (5, 125, 3,2013);
+INSERT INTO [dbo].[producto_stock] ([prst_id], [prodst_preciouni], [tipo_tipo_id], [prst_anio]) VALUES (6, 115, 3,2012);
+
+INSERT INTO [dbo].[producto_stock] ([prst_id], [prodst_preciouni], [tipo_tipo_id], [prst_anio]) VALUES (7, 100, 3,2000);
+INSERT INTO [dbo].[producto_stock] ([prst_id], [prodst_preciouni], [tipo_tipo_id], [prst_anio]) VALUES (8, 250, 2,2001);
+INSERT INTO [dbo].[producto_stock] ([prst_id], [prodst_preciouni], [tipo_tipo_id], [prst_anio]) VALUES (9, 40, 3,2000);
+INSERT INTO [dbo].[producto_stock] ([prst_id], [prodst_preciouni], [tipo_tipo_id], [prst_anio]) VALUES (10,12, 2,2003);
+INSERT INTO [dbo].[producto_stock] ([prst_id], [prodst_preciouni], [tipo_tipo_id], [prst_anio]) VALUES (11, 25, 1,2013);
+INSERT INTO [dbo].[producto_stock] ([prst_id], [prodst_preciouni], [tipo_tipo_id], [prst_anio]) VALUES (12, 155, 1,2012);
+
+
+
+
+
+
+
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (1, 25, 1, 4);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (2, 30, 4, 4);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (3, 30, 5, 5);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (4, 30, 6, 4);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (5, 24, 5, 4);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (6, 30, 7, 19);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (7, 10, 11, 19);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (8, 2, 12, 20);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (9, 5, 9, 19);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (10, 7, 5, 14);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (11, 12, 2, 15);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (12, 12, 3, 15);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (13, 15, 1, 15);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (14, 20, 2, 12);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (15, 30, 8, 13);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (16, 58, 7, 16);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (17, 4, 6, 13);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (18, 2, 6, 13);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (19, 8, 6, 16);
+INSERT INTO [dbo].[detalle_orden_compra] ([deoc_id], [deoc_canidad], [producto_stock_prodst_id], [orden_compra_orde_id]) VALUES (20, 10, 2, 17);
+
+
+

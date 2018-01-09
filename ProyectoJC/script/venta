@@ -1,0 +1,151 @@
+-- Created by Vertabelo (http://vertabelo.com)
+-- Last modification date: 2018-01-08 16:22:24.047
+
+-- tables
+-- Table: canton
+CREATE TABLE canton (
+    cant_id int  NOT NULL,
+    cant_descrpcion nvarchar(500)  NOT NULL,
+    provincia_prov_id int  NOT NULL,
+    CONSTRAINT canton_pk PRIMARY KEY  (cant_id)
+);
+
+-- Table: cliente
+CREATE TABLE cliente (
+    clie_id int  NOT NULL,
+    clie_nombre nvarchar(500)  NOT NULL,
+    clie_direccion nvarchar(500)  NOT NULL,
+    clie_codigo nvarchar(500)  NOT NULL,
+    parroquia_parr_id int  NOT NULL,
+    tipo_cliente_ticl_id int  NOT NULL,
+    clie_codigoPostal nvarchar(500)  NOT NULL,
+    CONSTRAINT client_id PRIMARY KEY  (clie_id)
+);
+
+-- Table: detalle_orden_compra
+CREATE TABLE detalle_orden_compra (
+    deoc_id int  NOT NULL,
+    deoc_canidad int  NOT NULL,
+    producto_stock_prodst_id int  NOT NULL,
+    orden_compra_orde_id int  NOT NULL,
+    CONSTRAINT detalle_orden_compra_pk PRIMARY KEY  (deoc_id)
+);
+
+
+
+
+-- Table: orden_compra
+CREATE TABLE orden_compra (
+    orde_id int  NOT NULL,
+    clinte_clie_id int  NOT NULL,
+    orde_compra nvarchar(500)  NOT NULL,
+    orde_direccion_entrega nvarchar(500)  NOT NULL,
+    CONSTRAINT orden_compra_pk PRIMARY KEY  (orde_id)
+);
+
+-- Table: pais
+CREATE TABLE pais (
+    pais_id int  NOT NULL,
+    pais_descripcion nvarchar(500)  NOT NULL,
+    CONSTRAINT pais_pk PRIMARY KEY  (pais_id)
+);
+
+-- Table: parroquia
+CREATE TABLE parroquia (
+    parr_id int  NOT NULL,
+    parr_descripcion nvarchar(500)  NOT NULL,
+    canton_cant_id int  NOT NULL,
+    CONSTRAINT parroquia_pk PRIMARY KEY  (parr_id)
+);
+
+
+
+-- Table: producto_stock
+CREATE TABLE producto_stock (
+    prst_id int  NOT NULL,
+    prst_preciouni int  NOT NULL,
+    prst_codigo nvarchar(500)  NOT NULL,
+    tipo_tipo_id int  NOT NULL,
+    prst_anio int  NOT NULL,
+    CONSTRAINT producto_stock_pk PRIMARY KEY  (prst_id)
+);
+
+-- Table: provincia
+CREATE TABLE provincia (
+    prov_id int  NOT NULL,
+    prov_descripcion nvarchar(500)  NOT NULL,
+    pais_pais_id int  NOT NULL,
+    CONSTRAINT provincia_pk PRIMARY KEY  (prov_id)
+);
+
+
+
+-- Table: tipo
+CREATE TABLE tipo (
+    tipo_id int  NOT NULL,
+    tipo_descripcion nvarchar(500)  NOT NULL,
+    tipo_codigo nvarchar(500)  NOT NULL,
+    CONSTRAINT tipo_pk PRIMARY KEY  (tipo_id)
+);
+
+-- Table: tipo_cliente
+CREATE TABLE tipo_cliente (
+    ticl_id int  NOT NULL,
+    ticl_descripcion nvarchar(500)  NOT NULL,
+    CONSTRAINT tipo_cliente_pk PRIMARY KEY  (ticl_id)
+);
+
+
+
+-- foreign keys
+-- Reference: canton_provincia (table: canton)
+ALTER TABLE canton ADD CONSTRAINT canton_provincia
+    FOREIGN KEY (provincia_prov_id)
+    REFERENCES provincia (prov_id);
+
+-- Reference: cliente_parroquia (table: cliente)
+ALTER TABLE cliente ADD CONSTRAINT cliente_parroquia
+    FOREIGN KEY (parroquia_parr_id)
+    REFERENCES parroquia (parr_id);
+
+-- Reference: cliente_tipo_cliente (table: cliente)
+ALTER TABLE cliente ADD CONSTRAINT cliente_tipo_cliente
+    FOREIGN KEY (tipo_cliente_ticl_id)
+    REFERENCES tipo_cliente (ticl_id);
+
+-- Reference: detalle_orden_compra_orden_compra (table: detalle_orden_compra)
+ALTER TABLE detalle_orden_compra ADD CONSTRAINT detalle_orden_compra_orden_compra
+    FOREIGN KEY (orden_compra_orde_id)
+    REFERENCES orden_compra (orde_id);
+
+-- Reference: detalle_orden_compra_producto_stock (table: detalle_orden_compra)
+ALTER TABLE detalle_orden_compra ADD CONSTRAINT detalle_orden_compra_producto_stock
+    FOREIGN KEY (producto_stock_prodst_id)
+    REFERENCES producto_stock (prst_id);
+
+
+
+-- Reference: orden_compra_cliente (table: orden_compra)
+ALTER TABLE orden_compra ADD CONSTRAINT orden_compra_cliente
+    FOREIGN KEY (clinte_clie_id)
+    REFERENCES cliente (clie_id);
+
+-- Reference: parroquia_canton (table: parroquia)
+ALTER TABLE parroquia ADD CONSTRAINT parroquia_canton
+    FOREIGN KEY (canton_cant_id)
+    REFERENCES canton (cant_id);
+
+-- Reference: producto_stock_tipo (table: producto_stock)
+ALTER TABLE producto_stock ADD CONSTRAINT producto_stock_tipo
+    FOREIGN KEY (tipo_tipo_id)
+    REFERENCES tipo (tipo_id);
+
+-- Reference: provincia_pais (table: provincia)
+ALTER TABLE provincia ADD CONSTRAINT provincia_pais
+    FOREIGN KEY (pais_pais_id)
+    REFERENCES pais (pais_id);
+
+
+
+-- End of file.
+

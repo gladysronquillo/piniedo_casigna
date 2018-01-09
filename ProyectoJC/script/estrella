@@ -1,0 +1,75 @@
+-- Table: dim_time
+CREATE TABLE dim_time (
+    dim_time_id int  NOT NULL,
+    dim_time_descripcion nvarchar(500)  NOT NULL,
+    CONSTRAINT dim_time_pk PRIMARY KEY  (dim_time_id)
+);
+
+
+-- Table: dim_cliente
+CREATE TABLE dim_cliente (
+    dim_clie_id int  NOT NULL,
+    dim_clie_nombre nvarchar(500)  NOT NULL,
+    dim_clie_direccion nvarchar(500)  NOT NULL,
+    dim_parroquia nvarchar(500)  NOT NULL,
+    dim_canton nvarchar(500)  NOT NULL,
+    dim_provincia nvarchar(500)  NOT NULL,
+    dim_pais nvarchar(500)  NOT NULL,
+    dim_tipo_cliente nvarchar(500)  NOT NULL,
+    CONSTRAINT dim_cliente_pk PRIMARY KEY  (dim_clie_id)
+);
+
+-- Table: dim_producto
+CREATE TABLE dim_producto (
+    dim_prod_id int  NOT NULL,
+    dim_prod_costo int  NOT NULL,
+    dim_prod_anio int  NOT NULL,
+    dim_prod_tipo_descripcion nvarchar(500)  NOT NULL,
+    dim_prod_descripcion nvarchar(500)  NOT NULL,
+    dim_volumen int  NOT NULL,
+    dim_producto_id int  NOT NULL,
+    CONSTRAINT dim_producto_pk PRIMARY KEY  (dim_prod_id)
+);
+
+-- Table: dim_producto_stok
+CREATE TABLE dim_producto_stok (
+    dim_prod_id int  NOT NULL,
+    dim_prod_descripcion nvarchar(500)  NOT NULL,
+    dim_prod_anio int  NOT NULL,
+    dim_prod_tipo nvarchar(500)  NOT NULL,
+    dim_prod_preciouni int  NOT NULL,
+    CONSTRAINT dim_producto_stok_pk PRIMARY KEY  (dim_prod_id)
+);
+
+
+-- Table: th_compras
+CREATE TABLE th_compras (
+    th_comp_di int  NOT NULL,
+    dim_time_dim_time_id int  NOT NULL,
+    dim_producto_dim_prod_id int  NOT NULL,
+    dim_cliente_dim_clie_id int  NOT NULL,
+    dim_producto_stok_dim_prod_id int  NOT NULL,
+    dim_comp_cantidad int  NOT NULL,
+    CONSTRAINT th_compras_pk PRIMARY KEY  (th_comp_di)
+);
+
+-- Reference: th_compras_dim_cliente (table: th_compras)
+ALTER TABLE th_compras ADD CONSTRAINT th_compras_dim_cliente
+    FOREIGN KEY (dim_cliente_dim_clie_id)
+    REFERENCES dim_cliente (dim_clie_id);
+
+-- Reference: th_compras_dim_producto (table: th_compras)
+ALTER TABLE th_compras ADD CONSTRAINT th_compras_dim_producto
+    FOREIGN KEY (dim_producto_dim_prod_id)
+    REFERENCES dim_producto (dim_prod_id);
+
+-- Reference: th_compras_dim_producto_stok (table: th_compras)
+ALTER TABLE th_compras ADD CONSTRAINT th_compras_dim_producto_stok
+    FOREIGN KEY (dim_producto_stok_dim_prod_id)
+    REFERENCES dim_producto_stok (dim_prod_id);
+
+-- Reference: th_compras_dim_time (table: th_compras)
+ALTER TABLE th_compras ADD CONSTRAINT th_compras_dim_time
+    FOREIGN KEY (dim_time_dim_time_id)
+    REFERENCES dim_time (dim_time_id);
+

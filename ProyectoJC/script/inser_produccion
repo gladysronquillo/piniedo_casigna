@@ -1,0 +1,80 @@
+INSERT INTO [dbo].[tipo_producto] ([tipr_id],[tipr_descripcion]) VALUES (1, 'Red');
+INSERT INTO [dbo].[tipo_producto] ([tipr_id], [tipr_descripcion]) VALUES (2, 'White');
+
+
+INSERT INTO [dbo].[producto] ([prod_id], [prod_descripcion], [prod_codigo]) VALUES (1, 'McDonell Pinot Noir', '12765');
+
+INSERT INTO [dbo].[producto] ([prod_id], [prod_descripcion], [prod_codigo]) VALUES (2, 'Mornington Pinot Noir', '12766');
+
+INSERT INTO [dbo].[producto] ([prod_id], [prod_descripcion], [prod_codigo]) VALUES (3, 'Downunder Pinot Noir R', '12767');
+
+INSERT INTO [dbo].[producto] ([prod_id], [prod_descripcion], [prod_codigo]) VALUES (4, 'Mornington Merlot', '12821');
+
+INSERT INTO [dbo].[producto] ([prod_id], [prod_descripcion], [prod_codigo]) VALUES (5, 'Downunder Merlot', '14821');
+
+INSERT INTO [dbo].[producto] ([prod_id], [prod_descripcion], [prod_codigo]) VALUES (6, 'Mornington Pinot Grigio', '14823');
+
+INSERT INTO [dbo].[producto] ([prod_id], [prod_descripcion], [prod_codigo]) VALUES (7, 'Downunder Pinot Grigio', '14827');
+
+
+
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (1, 600, 120, 2013,1, 1);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (2, 580, 110, 2012, 1,1);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (3, 510, 90, 2011,1, 1);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (4, 400, 70, 2013,2, 6);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (5, 550, 100, 2013,1, 4);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (6, 400, 100, 2012,1, 4);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (7, 780, 80, 2013, 2,7);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (8, 690, 85, 2012,2, 7);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (9, 440, 70, 2013,2, 7);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (10, 240, 54, 2001, 2,7);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (11, 471, 245, 2014,1, 5);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (12, 35, 12, 2011,2, 6);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (13, 25, 87, 2002,1, 13);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (14, 785, 542, 2004,2, 6);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (15, 45, 20, 2014,2, 6);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (16, 87, 10, 2000,1, 4);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (17, 96, 15, 2010,1, 3);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (18, 354, 35, 2006,2, 6);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (19, 895, 87, 2014,1, 4);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (20, 78, 12, 2008,1, 5);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (21, 54, 12, 2009,1, 3);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (22, 30, 14, 2009,1, 4);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (23, 78, 13, 2006,1, 5);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (24, 52, 19, 2008,1, 3);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (25, 98, 12, 2013,2, 6);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (26, 404, 120, 2015,1, 2);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (27, 789, 150, 2017,1, 5);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (28, 788, 200, 2016,2, 6);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (29, 56, 12, 2008,1 ,4);
+
+INSERT INTO [dbo].[detalle_producto] ([depr_id], [depr_volumen], [depr_costo], [depr_anio],[tipo_producto_tipr_id], [producto_prod_id]) VALUES (30, 66, 10, 2009,1, 5);

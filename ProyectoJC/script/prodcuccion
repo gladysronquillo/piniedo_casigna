@@ -1,0 +1,39 @@
+-- Table: producto
+CREATE TABLE producto (
+    prod_id int  NOT NULL,
+    prod_descripcion nvarchar(500)  NOT NULL,
+    prod_codigo nvarchar(500)  NOT NULL,
+    CONSTRAINT prod_id PRIMARY KEY  (prod_id)
+);
+-- Table: tipo_producto
+CREATE TABLE tipo_producto (
+    tipr_id int  NOT NULL,
+    tipr_descripcion nvarchar(500)  NOT NULL,
+    CONSTRAINT tprod_id PRIMARY KEY  (tipr_id)
+);
+
+
+-- Table: detalle_producto
+CREATE TABLE detalle_producto (
+    depr_id int  NOT NULL,
+    depr_volumen int  NOT NULL,
+    depr_costo int  NOT NULL,
+    depr_anio int  NOT NULL,
+    tipo_producto_tipr_id int  NOT NULL,
+    producto_prod_id int  NOT NULL,
+    CONSTRAINT detalle_producto_pk PRIMARY KEY  (depr_id)
+);
+
+
+
+
+-- Reference: detalle_producto_producto (table: detalle_producto)
+ALTER TABLE detalle_producto ADD CONSTRAINT detalle_producto_producto
+    FOREIGN KEY (producto_prod_id)
+    REFERENCES producto (prod_id);
+
+-- Reference: detalle_producto_tipo_producto (table: detalle_producto)
+ALTER TABLE detalle_producto ADD CONSTRAINT detalle_producto_tipo_producto
+    FOREIGN KEY (tipo_producto_tipr_id)
+    REFERENCES tipo_producto (tipr_id);
+
